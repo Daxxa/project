@@ -1,4 +1,5 @@
 const getElementByClass = className => document.getElementsByClassName(className)[0];
+
 const getElementsByClass = className => [...document.getElementsByClassName(className)];
 
 const onSubmitBook = () => {
@@ -31,12 +32,6 @@ const onSubmitBook = () => {
 
     if (!methodName.length) {
         alert("Choose a method !");
-        event.preventDefault();
-        return false;
-    }
-
-    if (!userName.length) {
-        alert("Write the username !");
         event.preventDefault();
         return false;
     }
